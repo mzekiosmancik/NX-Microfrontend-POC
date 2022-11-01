@@ -1,5 +1,3 @@
-# NXNGwSJSaWO
-NX - NG with Static JS and Windowed Observables
 ## What is NX?
 
 From [NX Getting Started](https://nx.dev/getting-started/intro):
