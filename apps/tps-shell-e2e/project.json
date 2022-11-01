@@ -1,0 +1,28 @@
+{
+  "root": "apps/tps-shell-e2e",
+  "sourceRoot": "apps/tps-shell-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/tps-shell-e2e/cypress.json",
+        "devServerTarget": "tps-shell:serve:development"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "tps-shell:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/tps-shell-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["tps-shell"]
+}

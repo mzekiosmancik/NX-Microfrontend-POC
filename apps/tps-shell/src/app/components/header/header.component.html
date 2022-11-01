@@ -1,0 +1,25 @@
+<header class="header">
+  <a class="header__logo" href="/">
+    <img  src="/assets/images/logo.png" id="trizettoLogo" alt="Trizetto logo" /></a>
+
+  <div  class="site-id-card">
+    <div  id="s{iteIdCard" class="site-id-card__id">
+      Site ID {{userData.idTokenClaims.siteId}}
+    </div>
+    <div  id="siteIdCardName" class="mat-tooltip-trigger site-id-card__name wrapp-ellipsis" title="Kareo" aria-describedby="cdk-describedby-message-0">
+      {{userData.account.name}}
+    </div>
+  </div>
+
+  <div class="menu">
+      <div class="menu-item">
+          <a routerLink="workspace">Workspace</a>
+      </div>
+      <div class="menu-item">
+        <a routerLink="my-account">My Account</a>
+    </div>
+    <div class="menu-item">
+        <a>Resources</a>
+    </div>
+  </div>
+</header>

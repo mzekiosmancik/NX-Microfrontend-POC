@@ -1,0 +1,1 @@
+cd static && http-server -a localhost -p 4299 -d
